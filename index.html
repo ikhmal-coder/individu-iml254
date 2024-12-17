@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>IML 254</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+ background-color:#808000
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color:#bdb76b;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #bdb76b;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #777;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+
+</style>
+</head>
+<body>
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="index.html">Home</a>
+    <a href="aboutme.html">About Me</a>
+    <a href="education.html">Education</a>
+    <a href="family.html">My Family</a>
+    <a href="gallery.html">My Gallery</a>
+    <a href="hobby.html">My Hobbies</a>
+    <a href="mycontact.html">My Contact</a>
+  </div>
+</div>
+
+<h2><marquee><font color="white">Welcome To My Personal Website! &#128640;</font></marquee></h2>
+<p><marquee><font color="white">READY TO KNOW MORE ABOUT ME?</font></marquee></p>
+<span style="font-size:50px;cursor:pointer" onclick="openNav()">&#9776;<font color="white">Menu</font></span>
+
+<h2></h2>
+<p></p>
+<p></p>
+
+<header>
+<tr>
+<td><img src="image/me1.jpeg" alt="HTML5 Icon" width="600" height="500"></td>
+<h2>Hello There! &#128075;</h2>
+</header>
+
+
+<h2><font color="white">MUHAMMAD IKHMAL BIN SAMSUL BAHRI</font></h2>
+<p><font color="white">Hi there! This is my personal website and I welcome you to be here. In this website, you will find more about me, my friends and snippets about my family</font></p>
+<header>
+  <h2></h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="https://www.instagram.com/mal.ikh?igsh=MXBvMThjemw5MDM1bw=="><font color="white">My Instagram</font></a></li>
+      <li><a href="https://www.facebook.com/ikh.mal.7771?mibextid=ZbWKwL"><font color="white">My Facebook</font></a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <header>
+<tr>
+<td><img src="image/me2.jpeg" alt="HTML5 Icon" width="500" height="300"></td>
+</header>
+
+  </article>
+</section>
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+
+
+<footer>
+  <p><!-- Contact me / ending section -->
+        <h3 style="padding-bottom: 20px; padding-top: 80px;">Contact Me:</h3>
+
+        <p style="padding-bottom: 20px;">I'd love to get in contact with you, so please feel free to reach me on any of these platforms. </p>
+
+        <a href="https://wa.me/+60173988741" target="_blank"><img src="image/ws.png" width="2.7%"</a>
+
+        <br> <br> <br>
+</p>
+</footer>
+<center><a href="#top"><img src="image/top.png"></a>
+<div id="bottom" class="centered">
+
+</body>
+</html>

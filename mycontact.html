@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<h2>Contact</h2>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+.fa-whats'app {
+  background: #007bb5;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<h2>My Social Media</h2>
+
+<!-- Add font awesome icons -->
+<a href="https://www.facebook.com/ikh.mal.7771?mibextid=ZbWKwL" target="_blank"><img src="image/fb.png" width="2.5%"</a>
+<a href="https://wa.me/+60173988741" target="_blank"><img src="image/ws.png" width="2.7%"</a>
+<a href="https://www.google.com.my/?hl=ms" target="_blank"><img src="image/gg.png" width="3%"</a>
+<a href="https://youtube.com/@razje2163?si=BCyCxm2ftvHbmMeU" target="_blank"><img src="image/yt.png" width="3%"</a>
+<a href="https://www.instagram.com/mal.ikh?igsh=MXBvMThjemw5MDM1bw==" target="_blank"><img src="image/ig.jpeg" width="3%"</a>
+
+
+<style>
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: autofit;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #222;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #222;
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #222;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 900px; /* only for demonstration, should be removed */
+  background: #808080;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #222;
+  height: 900px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+
+</style>
+
+
+</head>
+<body>
+
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="index.html">Home</a>
+    <a href="aboutme.html">About Me</a>
+    <a href="education.html">Education</a>
+    <a href="family.html">My Family</a>
+    <a href="gallery.html">My Gallery</a>
+    <a href="hobby.html">My Hobbies</a>
+    <a href="mycontact.html">My Contact</a>
+  </div>
+</div>
+<p><img src="image/email.png" width="2.5%"</a></p> <p>muhdikhmal727@gmail.com</p>
+<span style="font-size:50px;cursor:pointer" onclick="openNav()">&#9776;<font color="white">Menu</font></span>
+
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="https://www.instagram.com/mal.ikh?igsh=MXBvMThjemw5MDM1bw=="><font color="white">My Instagram</font></a></li>
+      <li><a href="https://wa.me/qr/6LWCN7XTFTRTE1"><font color="white">My Whatsapp</font></a></li>
+
+    </ul>
+  </nav>
+  
+  <article>
+
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6I3mqTwhRpn34SLVafSH7G?utm_source=generator" width="100%" height="500" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+<center><img src="image/tq.png" alt="Mountains" style="width:50%"></center>
+
+
+  </article>
+</section>
+<br>
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+
+<footer>
+ <span style="font-size:50px;cursor:pointer" onclick="openNav()">&#9776;<font color="white">Menu</font></span>
+</footer>
+
+
+</body>
+</html>

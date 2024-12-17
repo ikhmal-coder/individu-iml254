@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e6c2ee;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color:#FFFFFF;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: autofit;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #5c3b8e;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+
+</style>
+
+
+</head>
+<body>
+
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="index.html">Home</a>
+    <a href="aboutme.html">About Me</a>
+    <a href="education.html">Education</a>
+    <a href="family.html">My Family</a>
+    <a href="gallery.html">My Gallery</a>
+    <a href="hobby.html">My Hobbies</a>
+    <a href="mycontact.html">My Contact</a>
+  </div>
+</div>
+
+<h2><span style='font-size:50px;'></span>My Beloved Family</h2>&#128106;
+<p>My family consists of 7 people including my parents and 5 siblings.</p>
+<p>Our siblings have 4 boys and 1 girl and im the eldest one in my siblings</p>
+<span style="font-size:50px;cursor:pointer" onclick="openNav()">&#9776;<font color="white">Menu</font></span>
+
+
+<header>
+  <h2><img src="image/family1.jpeg" alt="Bear" style="width:70%"></h2>
+</header>
+
+<section>
+    
+  <article>
+
+
+<h2>PHOTOS OF MY FAMILY MEMBERS</h2>
+
+
+
+
+
+
+
+<!-- Portfolio Gallery Grid -->
+<style>
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+  }
+
+  .column {
+    flex: 1 1 calc(33.333% - 16px);
+    box-sizing: border-box;
+    max-width: calc(33.333% - 16px);
+  }
+
+  .content {
+    background-color: #f9f9f9;
+    padding: 16px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+
+  .content img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .column {
+      flex: 1 1 calc(50% - 16px);
+      max-width: calc(50% - 16px);
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .column {
+      flex: 1 1 100%;
+      max-width: 100%;
+    }
+  }
+</style>
+
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="image/ayah.jpeg" alt="Mountains" style="width:100%">
+      <h3>My Father (SAMSUL BAHRI BIN SARIMAN)</h3>
+      <p></p>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="content">
+      <img src="image/gallery25.jpeg" alt="Lights" style="width:100%">
+      <h3>My Mother (AZREEN ADHA BINTI AHMAD)</h3>
+      <p></p>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="content">
+      <img src="image/me7.jpeg" alt="Nature" style="width:100%">
+      <h3>Me (MUHAMMAD IKHMAL BIN SAMSUL BAHRI)</h3>
+      <p></p>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="content">
+      <img src="image/tina.jpeg" alt="Nature" style="width:100%">
+      <h3>My Little Sister (NURLAILATUL QISTINA BINTI SAMSUL BAHRI)</h3>
+      <p></p>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="content">
+      <img src="image/icad.jpeg" alt="Nature" style="width:100%">
+      <h3>My Third Brother (MUHAMMAD IMAN IRSYAD BIN SAMSUL BAHRI)</h3>
+      <p></p>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="content">
+      <img src="image/iman.jpeg" alt="Nature" style="width:100%">
+      <h3>My Fourth Brother (MUHAMMAD IMAN ISHAM BIN SAMSUL BAHRI)</h3>
+      <p></p>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="content">
+      <img src="image/zudin.jpeg" alt="Nature" style="width:100%">
+      <h3>My Little Brother (MUHAMMAD IMAN IZZUDIN BIN SAMSUL BAHRI)</h3>
+      <p></p>
+    </div>
+  </div>
+</div>
+
+
+<!-- END GRID -->
+</div>
+
+<div class="content">
+ 
+  <h3></h3>
+  <img src="image/gallery23.jpeg" style="width:100%">
+  <p>My Big Family</p>
+</div>
+
+<!-- END MAIN -->
+
+
+
+
+</div>
+
+  </article>
+</section>
+<br>
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+
+
+<footer>
+  <span style="font-size:50px;cursor:pointer" onclick="openNav()">&#9776;<font color="white">Menu</font></span>
+</footer>
+
+</body>
+</html>

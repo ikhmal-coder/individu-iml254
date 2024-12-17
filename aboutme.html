@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>IML 254</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+
+</style>
+</head>
+<body>
+
+<h2>My Social Media</h2>
+
+<!-- Add font awesome icons -->
+<a href="https://www.facebook.com/ikh.mal.7771?mibextid=ZbWKwL" target="_blank"><img src="image/fb.png" width="2.5%"</a>
+<a href="https://wa.me/+60173988741" target="_blank"><img src="image/ws.png" width="2.7%"</a>
+<a href="https://www.google.com.my/?hl=ms" target="_blank"><img src="image/gg.png" width="3%"</a>
+<a href="https://youtube.com/@razje2163?si=BCyCxm2ftvHbmMeU" target="_blank"><img src="image/yt.png" width="3%"</a>
+<a href="https://www.instagram.com/mal.ikh?igsh=MXBvMThjemw5MDM1bw==" target="_blank"><img src="image/ig.jpeg" width="3%"</a>
+
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #bdb76b;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: autofit;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+
+</style>
+
+
+</head>
+<body>
+
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="index.html">Home</a>
+    <a href="aboutme.html">About Me</a>
+    <a href="education.html">Education</a>
+    <a href="family.html">My Family</a>
+    <a href="gallery.html">My Gallery</a>
+    <a href="hobby.html">My Hobbies</a>
+    <a href="mycontact.html">My Contact</a>
+  </div>
+</div>
+
+
+
+
+<h2>ABOUT ME</h2>&#128064;
+<p>Hi there! My name is Muhammad Ikhmal Bin Samsul Bahri.</p>
+<p><iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/567e29TDzLwZwfDuEpGTwo?utm_source=generator" width="50%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></p>
+<span style="font-size:50px;cursor:pointer" onclick="openNav()">&#9776;<font color="white">Menu</font></span>
+
+
+<header>
+  <h2 style="display: flex; justify-content: center; gap: 10px;">
+    <marquee>
+      <img src="image/ikhmal.jpeg" alt="HTML5 Icon" width="300" height="300">
+      <img src="image/me3.jpeg" alt="HTML5 Icon" width="300" height="300">
+      <img src="image/me4.jpeg" alt="HTML5 Icon" width="300" height="300">
+      <img src="image/me5.jpeg" alt="HTML5 Icon" width="300" height="300">
+      <img src="image/me6.jpeg" alt="HTML5 Icon" width="300" height="300">
+    </marquee>
+  </h2>
+</header>
+
+<section>
+    
+  <article>
+
+<h2>MY BIODATA</h2>
+<img src="image/me7.jpeg" class="center"  alt="HTML5 Icon" width="189" height="autofit">
+<table>
+  <tr>
+    <th>NAME</th>
+    <th>MUHAMMAD IKHMAL BIN SAMSUL BAHRI</th>
+  </tr>
+  <tr>
+    <td>AGE</td>
+    <td>20</td>
+  </tr>
+  <tr>
+    <td>FAVORITE FOOD</td>
+    <td>CHICKEN</td>
+  </tr>
+  <tr>
+    <td>HOBBY</td>
+    <td>PLAYING GAMES</td>
+  </tr>
+  <tr>
+    <td>AMBITION</td>
+    <td>MILLIONAIRE</td>
+  </tr>
+  <tr>
+    <td>DATE OF BIRTH</td>
+    <td>2/1/2004</td>
+  </tr>
+  <tr>
+    <td>FAVORITE COLOR</td>
+    <td>BLACK</td>
+  </tr>
+  <tr>
+    <td>FAVORITE MOVIE</td>
+    <td>HORROR MOVIE</td>
+
+
+
+</table>
+
+
+
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<h1>LET'S GET STARTED!!</h1>
+<hr>
+
+<h2>IKHMAL</h2>
+<p>More things about me:</p>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="image/card.jpg" alt="Mountains" style="width:100%">
+      <h3>About Me</h3>
+      <p>A little bit of introduction from me, hi there! You can call me Mal for short. I am currently a full time diploma student in UiTM Kedah, studying Library Informatics and now is already my fourth sem.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <center><img src="image/skill.jpeg" style="width:50%"></center>
+      <h3>My Skills</h3>
+      <p>I can make roti canai.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="image/id.jpg" alt="Nature" style="width:100%">
+      <h3>Fun Fact</h3>
+      <p>Im actually a mix since both my father and mother are from different country.My father is from Indonesia while my mother is from Malaysia.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="image/myself.jpeg" alt="Mountains" style="width:100%">
+      <h3>My Background</h3>
+      <p>My name is Muhammad Ikhmal bin Samsul Bahri, you can call me Mal. I was born on January 2, 2004, in Hospital Sultanah Fatimah,Muar. I live in Muar, Johor up until now. To know more about me, you should explore this website!</p>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+
+<div class="content">
+  <img src="image/meme.jpg" alt="Bear" style="width:100%">
+</div>
+
+<!-- END MAIN -->
+
+
+
+
+</div>
+
+  </article>
+</section>
+<br>
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+
+
+<footer>
+ <span style="font-size:50px;cursor:pointer" onclick="openNav()">&#9776;<font color="white">Menu</font></span>
+</footer>
+</body>
+</html>

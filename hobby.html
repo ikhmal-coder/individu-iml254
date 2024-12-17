@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>IML 254</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<body bgcolor="#d3a0ed">
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #d3a0ed
+  padding: 20px;
+  font-family: Book Antiqua;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: autofit;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+
+</style>
+
+
+</head>
+<body>
+
+
+<span style="font-size:50px;cursor:pointer" onclick="openNav()">&#9776;<font color="white">Menu</font></span>
+</a>
+  <br>
+
+<center><img src="image/hobi.png" alt="Mountains" style="width:50%"></center>
+
+
+
+<header>
+  <h2><font face="Bradley Hand ITC"><marquee><img src="image/hobi3.jpg" alt="Mountains" style="width:25%"></marquee> </font></h2>
+</header>
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="index.html">Home</a>
+    <a href="aboutme.html">About Me</a>
+    <a href="education.html">Education</a>
+    <a href="family.html">My Family</a>
+    <a href="gallery.html">My Gallery</a>
+    <a href="hobby.html">My Hobbies</a>
+    <a href="mycontact.html">My Contact</a>
+  </div>
+</div>
+
+
+<section>
+    
+  <article>
+
+
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<h1>BELOW ARE MY HOBBIES</h1>
+<hr>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column">
+    <div class="content">
+       <video width="200" height="100" controls>
+    <source src="video/hobi.mp4" type="video/mp4"></video>
+     <h3>PLAYING GAMES</h3>
+      <p>One of the most things i like to do is playing games especially mobile legends</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="image/hobi4.jpg" alt="Lights" style="width:50%">
+      <h3>READING COMIC</h3>
+      <p>Im very into comic especially the comedy and action one.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="image/hobi5.jpeg" alt="Nature" style="width:100%">
+      <h3>WATCHING MOVIE</h3>
+      <p>Sometimes I watch movie when I got nothing to do.I enjoy movie with genre such as horror,action and fiction</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0NpZenGEA81m99MX1Q677C?utm_source=generator" width="100%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      <h3>LISTENING TO MUSIC/SONGS</h3>
+      <p>I always listen to the ongs that likes before sleep</p>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+
+<div class="content">
+  <img src="image/hobi7.png" alt="Bear" style="width:100%">
+</div>
+
+<!-- END MAIN -->
+
+
+
+
+</div>
+
+  </article>
+</section>
+<br>
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+
+
+<footer>
+ <span style="font-size:50px;cursor:pointer" onclick="openNav()">&#9776;<font color="white">Menu</font></span>
+</footer>
+
+</body>
+</html>
